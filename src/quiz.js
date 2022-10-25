@@ -12,11 +12,11 @@ function Quiz() {
         },
         {
           answerText: "Your hardest, most important task for the day",
-          isCorrect: false,
+          isCorrect: true,
         },
         {
           answerText: "Your manager's latest burning ask from you",
-          isCorrect: true,
+          isCorrect: false,
         },
         { answerText: "An actual frog", isCorrect: false },
       ],
@@ -24,12 +24,19 @@ function Quiz() {
         "The “Frog” is also known as your Most Important Task (MIT). This task is often important but not urgent, the type of difficult task that creates a lot of mental resistance and ensuing procrastination if you don't intentionally make time for it. You probably already know the task I’m talking about",
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText:
+        "When do you 'eat the frog' i.e. do the most important task for the day?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "First thing in the morning", isCorrect: true },
+        {
+          answerText: "During an empty slot in the calendar",
+          isCorrect: false,
+        },
+        { answerText: "Immediately after lunch", isCorrect: false },
+        {
+          answerText: "At night, when there are no distractions",
+          isCorrect: false,
+        },
       ],
       description: "This",
     },
