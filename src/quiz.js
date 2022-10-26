@@ -120,7 +120,7 @@ function Quiz() {
   const [disc, setdisc] = useState(false);
   const [color, setcolor] = useState(false);
 
-  const handleAnswerOptionClick = (isCorrect) => {
+  const handleAnsOption = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
       setcolor(true);
@@ -157,7 +157,7 @@ function Quiz() {
           <div className="answer-section">
             {questions[currentQuestion].answerOptions.map((answerOption) => (
               <button
-                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                onClick={() => handleAnsOption(answerOption.isCorrect)}
                 style={{ backgroundColor: color ? "green" : null }}
               >
                 {answerOption.answerText}

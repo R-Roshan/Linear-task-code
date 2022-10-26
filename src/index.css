@@ -136,6 +136,8 @@ button svg {
 
 .disc {
   width: 100%;
+  font-weight: bold;
+  font-size: 17px;
   margin-top: 40px;
   color: #07131b;
   text-align: center;
